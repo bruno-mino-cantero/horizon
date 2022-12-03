@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Horizon</title>
   </head>
@@ -114,7 +115,12 @@
       <section class="otros-tours">
         <h3 class="otros-tours__titulo">Otros Tours</h3>
         <div class="otros-tours__contenido">
-          <article class="tarjeta-tours">
+          <article
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="3000"
+            class="tarjeta-tours"
+          >
             <div class="tarjeta-tours__encabezado">
               <small
                 class="tarjetatours__encabezado-etiqueta tarjetatours__encabezado-etiqueta--destacada"
@@ -131,7 +137,12 @@
             <h2 class="tarjeta__titulo">Egipto (1 semana)</h2>
             <a href="./tours.html" class="tarjeta__enlace">Reservar</a>
           </article>
-          <article class="tarjeta-tours">
+          <article
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="3000"
+            class="tarjeta-tours"
+          >
             <div class="tarjeta-tours__encabezado">
               <small
                 class="tarjetatours__encabezado-etiqueta tarjetatours__encabezado-etiqueta--destacada"
@@ -148,7 +159,12 @@
             <h2 class="tarjeta__titulo">Portugal (1 semana)</h2>
             <a href="./tours.html" class="tarjeta__enlace">Reservar</a>
           </article>
-          <article class="tarjeta-tours">
+          <article
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="3000"
+            class="tarjeta-tours"
+          >
             <div class="tarjeta-tours__encabezado">
               <small
                 class="tarjetatours__encabezado-etiqueta tarjetatours__encabezado-etiqueta--destacada"
@@ -181,5 +197,9 @@
         </li>
       </ul>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

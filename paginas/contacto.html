@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Horizon</title>
   </head>
@@ -37,7 +38,11 @@
       </section>
       <section class="contacto-formulario">
         <form class="form-container">
-          <fieldset class="form-container--fieldset">
+          <fieldset
+            data-aos="flip-up"
+            data-aos-duration="3000"
+            class="form-container--fieldset"
+          >
             <div class="contact-title">Datos de Contato</div>
             <br />
             <label for="nombre">Nombre y Apellido</label>
@@ -74,5 +79,9 @@
         </li>
       </ul>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
