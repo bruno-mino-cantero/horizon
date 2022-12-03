@@ -1,0 +1,611 @@
+/* Universal */
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: 0%;
+}
+/* Global o estilos generales */
+header {
+  background-color: #db163d;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  position: sticky;
+  top: 0px;
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+}
+.header-logo {
+  padding-right: 1000px;
+}
+body {
+  background-color: #ebcf3b;
+  font-family: "Montserrat", sans-serif;
+}
+footer {
+  background-color: #db163d;
+  background-image: url("../imagenes/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 20px;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+ul {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+ul li a {
+  color: #ebcf3b;
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: inline;
+  margin: 0px 8px;
+}
+h1 {
+  text-align: center;
+}
+
+p {
+  margin: 40px 30px;
+  text-align: justify;
+}
+/* Index o inicio */
+.presentacion-texto-principal {
+  text-align: center;
+  font-size: 30px;
+  color: #db163d;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.destinos-destacados {
+  margin-top: 60px;
+  padding: 0 20px;
+  background-color: goldenrod;
+  padding-bottom: 100px;
+  padding-top: 20px;
+}
+.destinos-destacados__contenido {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.destinos-destacados__titulo {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+.tarjeta {
+  background-color: #db163d;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+.tarjeta__enlace {
+  background-color: #b7ad1e;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  color: #e2e8f0;
+  padding: 15px 0;
+  font-weight: bold;
+}
+.tarjeta__descripcion {
+  height: 50px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+.tarjeta__titulo {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+.tarjeta__encabezado-imagen {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.tarjeta__encabezado {
+  position: relative;
+}
+.tarjeta__encabezado-etiqueta {
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 10px 0 10px;
+  text-transform: uppercase;
+}
+.tarjeta__encabezado-etiqueta--destacada {
+  font-weight: bold;
+}
+.boton-nosotros {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ba072b;
+  color: #dbff0d;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  position: fixed;
+  bottom: 80px;
+  font-weight: bold;
+}
+/* Vuelos */
+.vuelos-titulos {
+  text-align: center;
+  font-size: 30px;
+  color: #db163d;
+  border-bottom: #db163d 1px solid;
+}
+.vuelos-disponibles {
+  display: flex;
+  flex-wrap: wrap;
+  color: #db163d;
+  font-size: 22px;
+}
+.vuelos-disponibles__fondo-alternativo {
+  background-color: rgb(135 2 28);
+  padding-bottom: 40px;
+}
+.vuelos-disponibles__titulos-izquierda {
+  margin-top: 20px;
+  margin-left: 110px;
+  color: #fff;
+}
+.vuelos-disponibles__fondo-original {
+  padding-bottom: 40px;
+}
+.vuelos-disponibles__titulos-derecha {
+  margin-left: 1030px;
+  margin-right: 277px;
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+.boton-vuelos-izquierda {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ba072b;
+  color: #dbff0d;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 110px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.boton-vuelos-derecha {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ba072b;
+  color: #dbff0d;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 1030px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.vuelos-disponibles-izquierda {
+  display: flex;
+}
+.vuelos-disponibles-izquierda-texto {
+  margin-right: 110px;
+  font-size: 25px;
+  margin-top: -10px;
+  color: #ffffff;
+}
+.vuelos-disponibles-derecha {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.vuelos-disponibles-derecha-texto {
+  margin-right: 25px;
+  margin-left: 110px;
+  margin-top: 0px;
+  font-size: 25px;
+}
+.vuelos-disponibles-imagenes {
+  margin-left: 110px;
+  margin-right: 110px;
+  border-style: solid;
+  border-color: #db163d;
+  border-width: 2px;
+}
+/* Tours */
+.tours-titulos {
+  text-align: center;
+  font-size: 30px;
+  color: #db163d;
+  border-bottom: #db163d 1px solid;
+}
+.tours-disponibles {
+  color: #db163d;
+  font-size: 20px;
+}
+.tours-disponibles-panama {
+  margin-top: 40px;
+}
+.tours-disponibles-panama-titulo {
+  margin-top: 20px;
+  margin-left: 75px;
+  font-size: 40px;
+}
+.tours-disponibles-panama-texto {
+  margin-left: 75px;
+  margin-right: 105px;
+  margin-top: 10px;
+}
+.tours-disponibles-italia {
+  background-color: rgb(135 2 28);
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.tours-disponibles-italia-titulo {
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: 75px;
+  font-size: 40px;
+}
+.tours-disponibles-italia-texto {
+  color: #ffffff;
+  margin-left: 75px;
+  margin-right: 105px;
+  margin-top: 10px;
+}
+.tours-disponibles-madrid {
+  margin-top: 60px;
+}
+.tours-disponibles-madrid-titulo {
+  margin-top: 20px;
+  margin-left: 75px;
+  font-size: 40px;
+}
+.tours-disponibles-madrid-texto {
+  margin-left: 75px;
+  margin-right: 105px;
+  margin-top: 10px;
+}
+.tours-disponibles-imagenes {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-color: #db163d;
+  border-width: 3px;
+}
+.boton-tours {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ba072b;
+  color: #dbff0d;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 75px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.otros-tours {
+  margin-top: 60px;
+  padding: 0 20px;
+  background-color: goldenrod;
+  padding-bottom: 100px;
+  padding-top: 20px;
+}
+.otros-tours__contenido {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.otros-tours__titulo {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+.tarjeta-tours {
+  background-color: #db163d;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+.tarjeta-tours__enlace {
+  background-color: #b7ad1e;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  color: #e2e8f0;
+  padding: 15px 0;
+  font-weight: bold;
+}
+.tarjeta-tours__titulo {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+.tarjeta-tours__encabezado-imagen {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.tarjeta-tours__encabezado {
+  position: relative;
+}
+.tarjetatours__encabezado-etiqueta {
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  color: #fff;
+  background-color: rgb(0 0 0 / 82%);
+  border-radius: 0 10px 0 10px;
+  text-transform: uppercase;
+}
+.tarjetatours__encabezado-etiqueta--destacada {
+  font-weight: bold;
+}
+/* Galería */
+.galeria-titulos {
+  text-align: center;
+  font-size: 30px;
+  color: #db163d;
+}
+.galeria-imagenes {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+.galeria-imagenes img {
+  width: 350px;
+  height: 350px;
+}
+/* Contacto */
+.main-contacto {
+  height: 85vh;
+}
+.contacto-titulos {
+  text-align: center;
+  font-size: 30px;
+  color: #db163d;
+  padding-bottom: 1rem;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+  padding: 15px;
+  background-color: goldenrod;
+  padding-bottom: 423px;
+}
+.form-container--fieldset {
+  padding: 20px;
+  background: #ba072b;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 1.3rem;
+  font-size: 1.3rem;
+  background-image: url(../imagenes/fondo-contacto.jpg);
+  background-repeat: no-repeat;
+}
+.contact-title {
+  text-align: center;
+}
+/* Media Queries */
+/* Desktop First: Trabajo desde escritorio. Media Querie que se usa es Max-Width */
+/* 768px: valor para Tablet */
+@media only screen and (max-width: 768px) {
+  /* Global o estilos generales */
+  header {
+    flex-direction: column;
+    z-index: 100;
+  }
+  .header-logo {
+    padding-right: 236px;
+    width: 30%;
+  }
+  nav {
+    justify-content: center;
+  }
+  ul {
+    text-align: center;
+  }
+  h1 {
+    font-size: 44px;
+  }
+  h3 {
+    font-size: 37px;
+  }
+  p {
+    font-size: 26px;
+  }
+  /* Index o inicio */
+  .boton-nosotros {
+    bottom: 5px;
+  }
+  .destinos-destacados__contenido {
+    grid-template-columns: 1fr;
+  }
+  .tarjeta__descripcion {
+    height: 75px;
+  }
+  /* Vuelos */
+  .vuelos-disponibles__fondo-alternativo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    width: 768px;
+  }
+  .vuelos-disponibles-izquierda {
+    flex-direction: column;
+  }
+  .vuelos-disponibles-izquierda-texto {
+    margin-right: 70px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 70px;
+  }
+  .boton-vuelos-izquierda {
+    margin-right: 110px;
+  }
+  .vuelos-disponibles__fondo-original {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    width: 768px;
+  }
+  .vuelos-disponibles-derecha {
+    flex-direction: column;
+  }
+  .vuelos-disponibles__titulos-derecha {
+    margin-top: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+  .vuelos-disponibles-derecha-texto {
+    margin-right: 70px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 70px;
+  }
+  .boton-vuelos-derecha {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+  /* Tours */
+  .otros-tours__contenido {
+    grid-template-columns: 1fr;
+  }
+  /* Galeria */
+  .galeria-imagenes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  /* Contacto */
+  .form-container {
+    padding-bottom: 254px;
+  }
+}
+/* 576px: valor para Mobile */
+@media only screen and (max-width: 576px) {
+  /* Global o estilos generales */
+  header {
+    flex-direction: column;
+    z-index: 100;
+  }
+  .header-logo {
+    padding-right: 236px;
+    width: 50%;
+  }
+  nav {
+    justify-content: center;
+  }
+  ul {
+    text-align: center;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 22px;
+  }
+  /* Index o inicio */
+  .boton-nosotros {
+    bottom: 5px;
+  }
+  .destinos-destacados__contenido {
+    grid-template-columns: 1fr;
+  }
+  .tarjeta__descripcion {
+    height: 75px;
+  }
+  /* Vuelos */
+  .vuelos-disponibles__fondo-alternativo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    width: 577px;
+  }
+  .vuelos-disponibles-izquierda {
+    flex-direction: column;
+  }
+  .vuelos-disponibles-izquierda-texto {
+    margin-right: 70px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 70px;
+  }
+  .boton-vuelos-izquierda {
+    margin-right: 110px;
+  }
+  .vuelos-disponibles__fondo-original {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    width: 577px;
+  }
+  .vuelos-disponibles-derecha {
+    flex-direction: column;
+  }
+  .vuelos-disponibles__titulos-derecha {
+    margin-top: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+  .vuelos-disponibles-derecha-texto {
+    margin-right: 70px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 70px;
+  }
+  .boton-vuelos-derecha {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+  /* Tours */
+  .otros-tours__contenido {
+    grid-template-columns: 1fr;
+  }
+  /* Galeria */
+  .galeria-imagenes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  /* Contacto */
+  .form-container {
+    padding-bottom: 256px;
+  }
+}
