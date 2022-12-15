@@ -11,16 +11,21 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="../css/style.css" />
     <title>Horizon</title>
   </head>
   <body>
     <header>
+      <!--logo del encabezado  -->
       <img
         src="../imagenes/logo-sin-fondo.png"
         alt="logo-sin-fondo.png"
         class="header-logo"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
       />
+      <!-- barra de navegacion -->
       <nav>
         <ul>
           <li><a href="../index.html">Inicio</a></li>
@@ -31,17 +36,23 @@
         </ul>
       </nav>
     </header>
+    <!-- el contenido central en este apartado son los vuelos -->
     <main class="vuelos">
-      <section class="vuelos-titulos">
+      <section class="titulos">
         <h1>¡Comienza hoy mismo tu experiencia Horizon!</h1>
         <h3>Descubre nuestros vuelos disponibles</h3>
       </section>
-      <section class="vuelos-disponibles">
+      <!-- se detallan los vuelos disponibles -->
+      <section class="disponibles">
+        <!-- Vuelo de Buenos Aires-->
+        <!--De acuerdo al fondo: "fondo-alternativo"=color distinto al fondo amarillo. "fondo-original"=mismo color amarillo -->
+        <!-- La section que esta debajo representa el tipo y duracion de cada animacion, esta aclaracion es valida para los siguientes vuelos -->
         <section
           data-aos="fade-right"
           data-aos-duration="3000"
-          class="vuelos-disponibles__fondo-alternativo"
+          class="fondo-alternativo"
         >
+          <!-- De acuerdo a la posicion, separe los vuelos en "Left/izquierda" o "Right/derecha" -->
           <h2 class="vuelos-disponibles__titulos-izquierda">
             Buenos Aires (Argentina)
           </h2>
@@ -63,10 +74,11 @@
             </p>
           </article>
         </section>
+        <!-- Vuelo de Barcelona (A partir de ahora solo mencionare la ciudad en los comentarios) -->
         <section
           data-aos="fade-left"
           data-aos-duration="3000"
-          class="vuelos-disponibles__fondo-original"
+          class="fondo-original"
         >
           <h2 class="vuelos-disponibles__titulos-derecha">
             Parque Güell, Barcelona (España)
@@ -95,10 +107,11 @@
             </p>
           </article>
         </section>
+        <!-- Los Angeles -->
         <section
           data-aos="fade-right"
           data-aos-duration="3000"
-          class="vuelos-disponibles__fondo-alternativo"
+          class="fondo-alternativo"
         >
           <h2 class="vuelos-disponibles__titulos-izquierda">
             Los Ángeles (Estados Unidos)
@@ -121,10 +134,11 @@
             </p>
           </article>
         </section>
+        <!-- Santiago de Chile -->
         <section
           data-aos="fade-left"
           data-aos-duration="3000"
-          class="vuelos-disponibles__fondo-original"
+          class="fondo-original"
         >
           <h2 class="vuelos-disponibles__titulos-derecha">
             Santiago de Chile (Chile)
@@ -147,10 +161,11 @@
             </p>
           </article>
         </section>
+        <!-- Munich -->
         <section
           data-aos="fade-right"
           data-aos-duration="3000"
-          class="vuelos-disponibles__fondo-alternativo"
+          class="fondo-alternativo"
         >
           <h2 class="vuelos-disponibles__titulos-izquierda">
             Munich (Alemania)
@@ -170,10 +185,11 @@
             </p>
           </article>
         </section>
+        <!-- Hvar -->
         <section
           data-aos="fade-left"
           data-aos-duration="3000"
-          class="vuelos-disponibles__fondo-original"
+          class="fondo-original"
         >
           <h2 class="vuelos-disponibles__titulos-derecha">Hvar (Croacia)</h2>
           <button class="boton-vuelos-derecha">Comprar</button>
@@ -193,10 +209,11 @@
             </p>
           </article>
         </section>
+        <!-- Granada -->
         <section
           data-aos="fade-right"
           data-aos-duration="3000"
-          class="vuelos-disponibles__fondo-alternativo"
+          class="fondo-alternativo"
         >
           <h2 class="vuelos-disponibles__titulos-izquierda">
             Granada (España)
@@ -221,6 +238,7 @@
         </section>
       </section>
     </main>
+    <!-- pie de pagina con links a las redes sociales -->
     <footer>
       <ul>
         <li>
@@ -234,6 +252,7 @@
         </li>
       </ul>
     </footer>
+    <!-- link de JS que permite las animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

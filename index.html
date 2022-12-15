@@ -11,16 +11,21 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./css/style.css" />
     <title>Horizon</title>
   </head>
   <body>
     <header>
+      <!--logo del encabezado  -->
       <img
         src="./imagenes/logo-sin-fondo.png"
         alt="logo-sin-fondo.png"
         class="header-logo"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
       />
+      <!-- barra de navegacion -->
       <nav>
         <ul>
           <li><a href="./index.html">Inicio</a></li>
@@ -37,9 +42,13 @@
         </ul>
       </nav>
     </header>
-    <main class="presentacion">
-      <section class="presentacion-texto-principal">
-        <h1>No es viajar, es vivir una aventura</h1>
+    <!-- texto de introducción que responde a la pregunta: "Quienes somos?" -->
+    <main>
+      <section class="titulos">
+        <h1>No es viajar</h1>
+        <h3>Es vivir una aventura</h3>
+      </section>
+      <section class="texto">
         <p>
           Somos Horizon, una agencia de viajes dedicada a convencerte de que
           viajar no solo consiste en ver sitios bonitos y tomar buenas fotos,
@@ -54,6 +63,7 @@
           realmente.
         </p>
       </section>
+      <!-- video que acompaña a nuestra presentacion -->
       <section class="video-container">
         <aside>
           <iframe
@@ -68,9 +78,11 @@
           </iframe>
         </aside>
       </section>
-      <section class="destinos-destacados">
-        <h3 class="destinos-destacados__titulo">Destinos destacados</h3>
-        <div class="destinos-destacados__contenido">
+      <!-- tarjetas que se encuentran por debajo del video y que muestran destinos destacados -->
+      <section class="destacados">
+        <h3 class="destacados__titulo">Destinos destacados</h3>
+        <div class="destacados__contenido">
+          <!-- destino destacado de Buenos Aires -->
           <article data-aos="zoom-in" data-aos-duration="3000" class="tarjeta">
             <div class="tarjeta__encabezado">
               <small
@@ -94,6 +106,7 @@
               >Saber más</a
             >
           </article>
+          <!-- destino destacado de Granada, España -->
           <article data-aos="zoom-in" data-aos-duration="3000" class="tarjeta">
             <div class="tarjeta__encabezado">
               <small class="tarjeta__encabezado-etiqueta">Nuevo</small>
@@ -114,6 +127,7 @@
               >Saber más</a
             >
           </article>
+          <!-- destino destacado de Los Angeles, Estados Unidos -->
           <article data-aos="zoom-in" data-aos-duration="3000" class="tarjeta">
             <div class="tarjeta__encabezado">
               <small class="tarjeta__encabezado-etiqueta">Destacado</small>
@@ -135,9 +149,11 @@
             >
           </article>
         </div>
+        <!-- boton que acompaña a lo largo de la pagina principal -->
       </section>
       <button class="boton-nosotros">Más información</button>
     </main>
+    <!-- pie de pagina con links a las redes sociales -->
     <footer>
       <ul>
         <li>
@@ -151,6 +167,7 @@
         </li>
       </ul>
     </footer>
+    <!-- link de JS que permite las animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

@@ -11,16 +11,21 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="../css/style.css" />
     <title>Horizon</title>
   </head>
   <body>
     <header>
+      <!--logo del encabezado  -->
       <img
         src="../imagenes/logo-sin-fondo.png"
         alt="logo-sin-fondo.png"
         class="header-logo"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
       />
+      <!-- barra de navegacion -->
       <nav>
         <ul>
           <li><a href="../index.html">Inicio</a></li>
@@ -31,8 +36,9 @@
         </ul>
       </nav>
     </header>
-    <main class="main-contacto">
-      <section class="contacto-titulos">
+    <!-- el contenido central es el formulario de contacto -->
+    <main>
+      <section class="titulos">
         <h1>Sigamos recorriendo el mundo juntos</h1>
         <h3>Nos interesa saber tu opinión</h3>
       </section>
@@ -44,28 +50,32 @@
             class="form-container--fieldset"
           >
             <div class="contact-title">Datos de Contato</div>
-            <br />
-            <label for="nombre">Nombre y Apellido</label>
-            <input type="text" name="nombre" />
-            <br />
-            <label for="mail"> Correo electrónico</label>
-            <input type="text" name="mail" />
-            <br />
-            <label for="telefono"> Teléfono</label>
-            <input type="text" name="telefono" />
-            <br />
-            <input type="checkbox" id="terminos" />
-            <label for="terminos">Acepto términos y condiciones</label>
-            <br />
-            <label for="opinion">Realiza tu consulta o valoración</label>
-            <input type="text" name="opinion" />
-            <br />
+            <p>
+              <label for="nombre">Nombre y Apellido</label>
+              <input type="text" name="nombre" />
+            </p>
+            <p>
+              <label for="mail"> Correo electrónico</label>
+              <input type="text" name="mail" />
+            </p>
+            <p>
+              <label for="telefono"> Teléfono</label>
+              <input type="text" name="telefono" />
+            </p>
+            <p>
+              <input type="checkbox" id="terminos" />
+              <label for="terminos">Acepto términos y condiciones</label>
+            </p>
+            <p>
+              <label for="opinion">Realiza tu consulta o valoración</label>
+              <input type="text" name="opinion" />
+            </p>
             <button>Enviar</button>
-            <br />
           </fieldset>
         </form>
       </section>
     </main>
+    <!-- pie de pagina con links a las redes sociales -->
     <footer>
       <ul>
         <li>
@@ -79,6 +89,7 @@
         </li>
       </ul>
     </footer>
+    <!-- link de JS que permite las animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

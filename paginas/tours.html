@@ -11,16 +11,21 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="../css/style.css" />
     <title>Horizon</title>
   </head>
   <body>
     <header>
+      <!--logo del encabezado  -->
       <img
         src="../imagenes/logo-sin-fondo.png"
         alt="logo-sin-fondo.png"
         class="header-logo"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
       />
+      <!-- barra de navegacion -->
       <nav>
         <ul>
           <li><a href="../index.html">Inicio</a></li>
@@ -31,21 +36,23 @@
         </ul>
       </nav>
     </header>
+    <!-- El contenido central son los tours -->
     <main class="tours">
-      <section class="tours-titulos">
+      <section class="titulos">
         <h1>Explora los atractivos de los mejores lugares</h1>
         <h3>Excursiones al mejor precio</h3>
       </section>
-      <section class="tours-disponibles">
-        <section class="tours-disponibles-panama">
+      <section class="disponibles">
+        <!-- Tour de Panama -->
+        <section class="tours-disponibles-margen">
           <img
             src="../imagenes/ciudad_panama.jpg"
             alt="ciudad-panama"
             class="tours-disponibles-imagenes"
           />
-          <h2 class="tours-disponibles-panama-titulo">Ciudad de Panamá</h2>
+          <h2 class="tours-titulo">Ciudad de Panamá</h2>
           <button class="boton-tours">Reservar</button>
-          <p class="tours-disponibles-panama-texto">
+          <p class="tours-texto">
             En Panamá no solo encontrarás tesoros como hermosas playas e islas
             de ensueño. La Ciudad de Panamá es la capital más cosmopolita de
             Centroamérica y una visita obligada para cualquier viajero de la
@@ -60,15 +67,16 @@
             Panamá realmente ayuda a mantener conectado al mundo.
           </p>
         </section>
-        <section class="tours-disponibles-italia">
+        <!-- Tour de Italia -->
+        <section class="fondo-alternativo">
           <img
             src="../imagenes/ciudad_italia.jpg"
             alt="ciudad-italia"
             class="tours-disponibles-imagenes"
           />
-          <h2 class="tours-disponibles-italia-titulo">Italia</h2>
+          <h2 class="tours-titulo">Italia</h2>
           <button class="boton-tours">Reservar</button>
-          <p class="tours-disponibles-italia-texto">
+          <p class="tours-texto-italia">
             Este clásico de Europa merece la pena descubrirlo, de norte a sur;
             nunca será una mala decisión volver a Italia una y otra vez a
             disfrutar de "la dolce vita" en este lugar que posee un clima
@@ -84,15 +92,16 @@
             años de la historia de este increíble pueblo.
           </p>
         </section>
-        <section class="tours-disponibles-madrid">
+        <!-- Tour de Madrid -->
+        <section class="tours-disponibles-margen">
           <img
             src="../imagenes/ciudad_madrid.jpg"
             alt="ciudad-madrid"
             class="tours-disponibles-imagenes"
           />
-          <h2 class="tours-disponibles-madrid-titulo">Madrid</h2>
+          <h2 class="tours-titulo">Madrid</h2>
           <button class="boton-tours">Reservar</button>
-          <p class="tours-disponibles-madrid-texto">
+          <p class="tours-texto">
             Hacer turismo en Madrid engloba mucha información, ya que ésta no
             sólo es la capital de España, sino que es una enorme y vanguardista
             ciudad repleta de lugares maravillosos por descubrir. Una urbe que
@@ -112,22 +121,25 @@
           </p>
         </section>
       </section>
-      <section class="otros-tours">
-        <h3 class="otros-tours__titulo">Otros Tours</h3>
-        <div class="otros-tours__contenido">
+      <!-- Tarjetas que muestran otros tours -->
+      <section class="destacados">
+        <h3 class="destacados__titulo">Otros Tours</h3>
+        <div class="destacados__contenido">
+          <!-- Animacion de tarjeta -->
+          <!-- tour egipto -->
           <article
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="3000"
-            class="tarjeta-tours"
+            class="tarjeta"
           >
-            <div class="tarjeta-tours__encabezado">
+            <div class="tarjeta__encabezado">
               <small
-                class="tarjetatours__encabezado-etiqueta tarjetatours__encabezado-etiqueta--destacada"
+                class="tarjeta__encabezado-etiqueta tarjeta__encabezado-etiqueta--destacada"
                 >Económico</small
               >
               <img
-                class="tarjeta-tours__encabezado-imagen"
+                class="tarjeta__encabezado-imagen"
                 src="../imagenes/tour-egipto.jpg"
                 alt="tour-egipto"
                 width="360"
@@ -137,19 +149,20 @@
             <h2 class="tarjeta__titulo">Egipto (1 semana)</h2>
             <a href="./tours.html" class="tarjeta__enlace">Reservar</a>
           </article>
+          <!-- tour portugal -->
           <article
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="3000"
-            class="tarjeta-tours"
+            class="tarjeta"
           >
-            <div class="tarjeta-tours__encabezado">
+            <div class="tarjeta__encabezado">
               <small
-                class="tarjetatours__encabezado-etiqueta tarjetatours__encabezado-etiqueta--destacada"
+                class="tarjeta__encabezado-etiqueta tarjeta__encabezado-etiqueta--destacada"
                 >Nuevo</small
               >
               <img
-                class="tarjeta-tours__encabezado-imagen"
+                class="tarjeta__encabezado-imagen"
                 src="../imagenes/tour-portugal.jpg"
                 alt="tour-portugal"
                 width="360"
@@ -159,19 +172,20 @@
             <h2 class="tarjeta__titulo">Portugal (1 semana)</h2>
             <a href="./tours.html" class="tarjeta__enlace">Reservar</a>
           </article>
+          <!-- tour francia -->
           <article
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="3000"
-            class="tarjeta-tours"
+            class="tarjeta"
           >
-            <div class="tarjeta-tours__encabezado">
+            <div class="tarjeta__encabezado">
               <small
-                class="tarjetatours__encabezado-etiqueta tarjetatours__encabezado-etiqueta--destacada"
+                class="tarjeta__encabezado-etiqueta tarjeta__encabezado-etiqueta--destacada"
                 >Destacado</small
               >
               <img
-                class="tarjeta-tours__encabezado-imagen"
+                class="tarjeta__encabezado-imagen"
                 src="../imagenes/tours-francia.jpg"
                 alt="tours-francia"
                 width="360"
@@ -184,6 +198,7 @@
         </div>
       </section>
     </main>
+    <!-- pie de pagina con links a las redes sociales -->
     <footer>
       <ul>
         <li>
@@ -197,6 +212,7 @@
         </li>
       </ul>
     </footer>
+    <!-- link de JS que permite las animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

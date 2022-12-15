@@ -11,16 +11,21 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="../css/style.css" />
     <title>Horizon</title>
   </head>
   <body>
     <header>
+      <!--logo del encabezado  -->
       <img
         src="../imagenes/logo-sin-fondo.png"
         alt="logo-sin-fondo.png"
         class="header-logo"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
       />
+      <!-- barra de navegacion -->
       <nav>
         <ul>
           <li><a href="../index.html">Inicio</a></li>
@@ -31,8 +36,9 @@
         </ul>
       </nav>
     </header>
+    <!-- el contenido central son las imagenes de los destinos -->
     <main class="galeria">
-      <section class="galeria-titulos">
+      <section class="titulos">
         <h1>Nuevos paisajes por conocer</h1>
         <h3>Echa un vistazo a nuestra galería</h3>
       </section>
@@ -129,6 +135,7 @@
         />
       </section>
     </main>
+    <!-- pie de pagina con links a las redes sociales -->
     <footer>
       <ul>
         <li>
@@ -142,6 +149,7 @@
         </li>
       </ul>
     </footer>
+    <!-- link de JS que permite las animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
