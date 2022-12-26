@@ -7,27 +7,15 @@
 /* Global o estilos generales */
 header {
   z-index: 100;
-  background: rgb(210, 182, 21);
   background: radial-gradient(
     circle,
     rgba(210, 182, 21, 1) 0%,
     rgba(219, 22, 48, 1) 100%
   );
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-decoration: none;
-  border-bottom: 1px solid white;
   position: sticky;
   top: 0px;
-  padding: 20px;
-  display: flex;
-  justify-content: end;
+  padding: 15px;
 }
-.header-logo {
-  padding-right: 1000px;
-  animation-iteration-count: 1;
-}
-
 .titulos {
   text-align: center;
   font-size: 30px;
@@ -56,16 +44,33 @@ body {
 
 footer {
   background-color: #db163d;
-  background-image: url("../imagenes/logo.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  list-style-type: none;
-  text-decoration: none;
   padding: 20px;
 }
-nav {
+footer ul {
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
+}
+footer ul li {
+  list-style: none;
+  margin: 0px 10px;
+}
+.bi {
+  font-size: 2rem;
+}
+.bi:hover {
+  color: white;
+}
+.navbar {
+  width: 100%;
+}
+.nav-link {
+  color: yellow;
+}
+.nav-link:hover {
+  color: white;
+}
+.navbar-collapse {
+  flex-grow: initial;
 }
 ul {
   text-align: right;
@@ -147,7 +152,7 @@ button {
   font-weight: bold;
 }
 .tarjeta__descripcion {
-  height: 50px;
+  height: 65px;
   margin-bottom: 40px;
   color: #ffffff;
 }
@@ -267,18 +272,13 @@ button {
 .galeria-imagenes {
   margin-top: 30px;
   margin-bottom: 30px;
-  gap: 20px;
-  justify-items: center;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 .galeria-imagenes img {
-  width: 350px;
-  height: 350px;
-  transition: all 2s;
-}
-.galeria-imagenes img:hover {
-  transform: scale(1.1);
+  height: 700px;
 }
 /* Contacto */
 .form-container {
@@ -306,13 +306,6 @@ button {
 /* 768px: valor para Tablet */
 @media only screen and (max-width: 768px) {
   /* Global o estilos generales */
-  header {
-    flex-direction: column;
-  }
-  .header-logo {
-    padding-right: 35px;
-    width: 20%;
-  }
   nav {
     justify-content: center;
   }
@@ -391,9 +384,17 @@ button {
     grid-template-columns: 1fr;
   }
   /* Galeria */
+  .carousel-control-prev {
+    justify-content: flex-end;
+  }
+  .carousel-control-next {
+    justify-content: flex-end;
+  }
   .galeria-imagenes {
-    flex-direction: column;
-    align-items: center;
+    width: 80%;
+  }
+  .galeria-imagenes img {
+    height: 550px;
   }
   /* Contacto */
   .form-container {
@@ -403,10 +404,6 @@ button {
 /* 576px: valor para Mobile */
 @media only screen and (max-width: 576px) {
   /* Global o estilos generales */
-  .header-logo {
-    padding-right: 15px;
-    width: 18%;
-  }
   ul li {
     font-size: 1.2rem;
   }
@@ -420,8 +417,11 @@ button {
     font-size: 22px;
   }
   /* Index o inicio */
+  .boton-nosotros {
+    bottom: 84px;
+  }
   .tarjeta__descripcion {
-    height: 100px;
+    height: 135px;
   }
   /* Vuelos */
   .fondo-alternativo {
@@ -429,6 +429,10 @@ button {
   }
   .fondo-original {
     width: 577px;
+  }
+  /* Galeria */
+  .galeria-imagenes img {
+    height: 500px;
   }
   /* Contacto */
   .form-container {
