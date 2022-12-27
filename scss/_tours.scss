@@ -1,0 +1,41 @@
+/* Tours */
+.tours-disponibles-margen {
+  margin-top: 40px;
+  .tours-titulo {
+    margin-top: $estandar;
+    margin-left: $toursmedidaestandar;
+    font-size: 40px;
+    color: red;
+  }
+  .tours-texto {
+    margin-left: $toursmedidaestandar;
+    margin-right: 105px;
+    margin-top: 10px;
+  }
+}
+.fondo-alternativo {
+  .tours-titulo {
+    margin-top: $estandar;
+    margin-left: $toursmedidaestandar;
+    font-size: 40px;
+    color: #ffffff;
+  }
+  .tours-texto-italia {
+    color: #ffffff;
+    margin-left: $toursmedidaestandar;
+    margin-right: 105px;
+    margin-top: 10px;
+  }
+}
+.tours-disponibles-imagenes {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-color: $rojo;
+  border-width: 3px;
+}
+.boton-tours {
+  margin-left: $toursmedidaestandar;
+}

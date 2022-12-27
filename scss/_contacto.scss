@@ -1,0 +1,21 @@
+/* Contacto */
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: goldenrod;
+  padding-bottom: 198px;
+  &--fieldset {
+    padding: $estandar;
+    background: #ba072b;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 1.3rem;
+    font-size: 1.3rem;
+    background-image: url(../imagenes/fondo-contacto.jpg);
+    background-repeat: no-repeat;
+  }
+  .contact-title {
+    text-align: center;
+  }
+}

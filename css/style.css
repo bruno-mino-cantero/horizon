@@ -1,42 +1,71 @@
+@charset "UTF-8";
 /* Universal */
 * {
   padding: 0%;
   margin: 0%;
   box-sizing: 0%;
 }
+
+/* Index o inicio  */
+.boton-nosotros {
+  position: fixed;
+  bottom: 80px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.video-container aside {
+  display: block;
+}
+.video-container aside iframe {
+  width: 560px;
+  height: 315px;
+}
+
 /* Global o estilos generales */
 header {
   z-index: 100;
-  background: radial-gradient(
-    circle,
-    rgba(210, 182, 21, 1) 0%,
-    rgba(219, 22, 48, 1) 100%
-  );
+  background: radial-gradient(circle, rgb(210, 182, 21) 0%, rgb(219, 22, 48) 100%);
   position: sticky;
   top: 0px;
   padding: 15px;
 }
+
 .titulos {
   text-align: center;
   font-size: 30px;
   color: #db163d;
   border-bottom: #db163d 1px solid;
 }
+.titulos h1 {
+  text-align: center;
+}
+
 body {
   background-color: #ebcf3b;
   font-family: "Montserrat", sans-serif;
 }
+
 .texto {
   color: #db163d;
   font-size: 25px;
   padding-left: 20px;
   padding-right: 20px;
 }
+.texto p {
+  margin: 40px 30px;
+  text-align: justify;
+}
+
 .fondo-alternativo {
-  background-color: rgb(135 2 28);
+  background-color: rgb(135, 2, 28);
   padding-top: 50px;
   padding-bottom: 40px;
 }
+
 .fondo-original {
   padding-bottom: 40px;
   background-color: #ebcf3b;
@@ -54,32 +83,32 @@ footer ul li {
   list-style: none;
   margin: 0px 10px;
 }
+
 .bi {
   font-size: 2rem;
 }
 .bi:hover {
   color: white;
 }
+
 .navbar {
   width: 100%;
 }
+.navbar-collapse {
+  flex-grow: initial;
+}
+
 .nav-link {
   color: yellow;
 }
 .nav-link:hover {
   color: white;
 }
-.navbar-collapse {
-  flex-grow: initial;
-}
+
 ul {
   text-align: right;
   display: flex;
   justify-content: flex-end;
-}
-ul li a {
-  color: #ebcf3b;
-  text-decoration: none;
 }
 ul li {
   list-style: none;
@@ -88,14 +117,11 @@ ul li {
   display: inline;
   margin: 0px 8px;
 }
-h1 {
-  text-align: center;
+ul li a {
+  color: #ebcf3b;
+  text-decoration: none;
 }
 
-p {
-  margin: 40px 30px;
-  text-align: justify;
-}
 button {
   border: 1px solid;
   border-radius: 5px;
@@ -109,12 +135,14 @@ button {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
 .disponibles {
   display: flex;
   flex-wrap: wrap;
   color: #db163d;
   font-size: 22px;
 }
+
 /* dentro de estilos generales: tarjetas y apartado "destacado" */
 .destacados {
   margin-top: 60px;
@@ -123,6 +151,11 @@ button {
   padding-bottom: 100px;
   padding-top: 20px;
 }
+.destacados__titulo {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+}
 .destacados__contenido {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -130,18 +163,43 @@ button {
   max-width: 1200px;
   margin: 0 auto;
 }
-.destacados__titulo {
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: 30px;
-}
-.tarjeta {
+.destacados__contenido .tarjeta {
   background-color: #db163d;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
 }
-.tarjeta__enlace {
+.destacados__contenido .tarjeta__encabezado {
+  position: relative;
+}
+.destacados__contenido .tarjeta__encabezado-etiqueta {
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.82);
+  border-radius: 0 10px 0 10px;
+  text-transform: uppercase;
+}
+.destacados__contenido .tarjeta__encabezado-etiqueta--destacada {
+  font-weight: bold;
+}
+.destacados__contenido .tarjeta__encabezado-imagen {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.destacados__contenido .tarjeta__titulo {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+.destacados__contenido .tarjeta__descripcion {
+  height: 65px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+.destacados__contenido .tarjeta__enlace {
   background-color: #b7ad1e;
   width: 100%;
   display: inline-block;
@@ -151,64 +209,18 @@ button {
   padding: 15px 0;
   font-weight: bold;
 }
-.tarjeta__descripcion {
-  height: 65px;
-  margin-bottom: 40px;
-  color: #ffffff;
-}
-.tarjeta__titulo {
-  margin-bottom: 20px;
-  font-size: 20px;
-  color: #fff;
-}
-.tarjeta__encabezado-imagen {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-.tarjeta__encabezado {
-  position: relative;
-}
-.tarjeta__encabezado-etiqueta {
-  padding: 8px;
-  position: absolute;
-  right: 0;
-  color: #fff;
-  background-color: rgb(0 0 0 / 82%);
-  border-radius: 0 10px 0 10px;
-  text-transform: uppercase;
-}
-.tarjeta__encabezado-etiqueta--destacada {
-  font-weight: bold;
-}
-/* Index o inicio */
-.video-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-.boton-nosotros {
-  position: fixed;
-  bottom: 80px;
-}
+
 /* Vuelos */
-.vuelos-disponibles__titulos-izquierda {
+.vuelos .vuelos-disponibles__titulos-izquierda {
   margin-top: 20px;
   margin-left: 110px;
   color: #fff;
 }
-.vuelos-disponibles__titulos-derecha {
-  margin-left: 1030px;
-  margin-right: 277px;
-  margin-top: 26px;
-  margin-bottom: 20px;
-}
+
 .boton-vuelos-izquierda {
   margin-left: 110px;
 }
-.boton-vuelos-derecha {
-  margin-left: 1030px;
-}
+
 .vuelos-disponibles-izquierda {
   display: flex;
 }
@@ -218,6 +230,18 @@ button {
   margin-top: -10px;
   color: #ffffff;
 }
+
+.vuelos-disponibles__titulos-derecha {
+  margin-left: 1030px;
+  margin-right: 277px;
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+
+.boton-vuelos-derecha {
+  margin-left: 1030px;
+}
+
 .vuelos-disponibles-derecha {
   display: flex;
   flex-direction: row-reverse;
@@ -228,6 +252,7 @@ button {
   margin-top: 0px;
   font-size: 25px;
 }
+
 .vuelos-disponibles-imagenes {
   margin-left: 110px;
   margin-right: 110px;
@@ -235,27 +260,36 @@ button {
   border-color: #db163d;
   border-width: 2px;
 }
+
 /* Tours */
 .tours-disponibles-margen {
   margin-top: 40px;
 }
-.tours-titulo {
+.tours-disponibles-margen .tours-titulo {
   margin-top: 20px;
   margin-left: 75px;
   font-size: 40px;
   color: red;
 }
-.tours-texto {
+.tours-disponibles-margen .tours-texto {
   margin-left: 75px;
   margin-right: 105px;
   margin-top: 10px;
 }
-.tours-texto-italia {
+
+.fondo-alternativo .tours-titulo {
+  margin-top: 20px;
+  margin-left: 75px;
+  font-size: 40px;
+  color: #ffffff;
+}
+.fondo-alternativo .tours-texto-italia {
   color: #ffffff;
   margin-left: 75px;
   margin-right: 105px;
   margin-top: 10px;
 }
+
 .tours-disponibles-imagenes {
   display: block;
   width: 60%;
@@ -265,9 +299,11 @@ button {
   border-color: #db163d;
   border-width: 3px;
 }
+
 .boton-tours {
   margin-left: 75px;
 }
+
 /* Galería */
 .galeria-imagenes {
   margin-top: 30px;
@@ -280,6 +316,7 @@ button {
 .galeria-imagenes img {
   height: 700px;
 }
+
 /* Contacto */
 .form-container {
   display: flex;
@@ -298,9 +335,10 @@ button {
   background-image: url(../imagenes/fondo-contacto.jpg);
   background-repeat: no-repeat;
 }
-.contact-title {
+.form-container .contact-title {
   text-align: center;
 }
+
 /* Media Queries */
 /* Desktop First: Trabajo desde escritorio. Media Querie que se usa es Max-Width */
 /* 768px: valor para Tablet */
@@ -351,10 +389,10 @@ button {
     padding-bottom: 5px;
     width: 768px;
   }
-  .vuelos-disponibles-izquierda {
+  .fondo-alternativo .vuelos-disponibles-izquierda {
     flex-direction: column;
   }
-  .vuelos-disponibles-izquierda-texto {
+  .fondo-alternativo .vuelos-disponibles-izquierda-texto {
     margin-top: 10px;
     margin-left: 106px;
   }
@@ -364,20 +402,20 @@ button {
     padding-bottom: 5px;
     width: 768px;
   }
-  .vuelos-disponibles-derecha {
-    flex-direction: column;
-  }
-  .vuelos-disponibles__titulos-derecha {
+  .fondo-original .vuelos-disponibles__titulos-derecha {
     margin-top: 20px;
     margin-left: 110px;
     margin-right: 110px;
   }
-  .vuelos-disponibles-derecha-texto {
+  .fondo-original .boton-vuelos-derecha {
+    margin-left: 110px;
+  }
+  .fondo-original .vuelos-disponibles-derecha {
+    flex-direction: column;
+  }
+  .fondo-original .vuelos-disponibles-derecha-texto {
     margin-bottom: 12px;
     margin-right: 110px;
-  }
-  .boton-vuelos-derecha {
-    margin-left: 110px;
   }
   /* Tours */
   .destacado__contenido {
@@ -439,3 +477,5 @@ button {
     padding-bottom: 240px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

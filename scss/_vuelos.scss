@@ -1,0 +1,46 @@
+/* Vuelos */
+.vuelos .vuelos-disponibles__titulos-izquierda {
+  margin-top: $estandar;
+  margin-left: $vuelosmedidaestandar;
+  color: #fff;
+}
+.boton-vuelos-izquierda {
+  margin-left: $vuelosmedidaestandar;
+}
+.vuelos-disponibles-izquierda {
+  display: flex;
+
+  &-texto {
+    margin-right: $vuelosmedidaestandar;
+    font-size: $estandar + 5px;
+    margin-top: -10px;
+    color: #ffffff;
+  }
+}
+.vuelos-disponibles__titulos-derecha {
+  margin-left: 1030px;
+  margin-right: 277px;
+  margin-top: 26px;
+  margin-bottom: $estandar;
+}
+.boton-vuelos-derecha {
+  margin-left: 1030px;
+}
+.vuelos-disponibles-derecha {
+  display: flex;
+  flex-direction: row-reverse;
+
+  &-texto {
+    margin-right: $estandar + 5px;
+    margin-left: $vuelosmedidaestandar;
+    margin-top: 0px;
+    font-size: $estandar + 5px;
+  }
+}
+.vuelos-disponibles-imagenes {
+  margin-left: $vuelosmedidaestandar;
+  margin-right: $vuelosmedidaestandar;
+  border-style: solid;
+  border-color: $rojo;
+  border-width: 2px;
+}

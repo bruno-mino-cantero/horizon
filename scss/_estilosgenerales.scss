@@ -1,0 +1,171 @@
+/* Global o estilos generales */
+header {
+  z-index: 100;
+  background: radial-gradient(circle, $gradienteamarillo, $gradienterojo);
+  position: sticky;
+  top: 0px;
+  padding: 15px;
+}
+.titulos {
+  text-align: center;
+  font-size: $estandar + 10px;
+  color: $rojo;
+  border-bottom: $rojo 1px solid;
+  h1 {
+    text-align: center;
+  }
+}
+body {
+  background-color: $amarillo;
+  font-family: "Montserrat", sans-serif;
+}
+.texto {
+  color: $rojo;
+  font-size: 25px;
+  padding-left: $estandar;
+  padding-right: $estandar;
+  p {
+    margin: 40px 30px;
+    text-align: justify;
+  }
+}
+.fondo-alternativo {
+  background-color: rgb(135 2 28);
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.fondo-original {
+  padding-bottom: 40px;
+  background-color: $amarillo;
+}
+footer {
+  background-color: $rojo;
+  padding: $estandar;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      list-style: none;
+      margin: 0px 10px;
+    }
+  }
+}
+.bi {
+  font-size: 2rem;
+  &:hover {
+    color: white;
+  }
+}
+.navbar {
+  width: 100%;
+  &-collapse {
+    flex-grow: initial;
+  }
+}
+.nav-link {
+  color: yellow;
+  &:hover {
+    color: white;
+  }
+}
+ul {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  li {
+    list-style: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: inline;
+    margin: 0px 8px;
+    a {
+      color: $amarillo;
+      text-decoration: none;
+    }
+  }
+}
+button {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: $estandar;
+  background-color: #ba072b;
+  color: #dbff0d;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: $estandar;
+  margin-top: $estandar;
+}
+.disponibles {
+  display: flex;
+  flex-wrap: wrap;
+  color: $rojo;
+  font-size: $estandar + 2px;
+}
+/* dentro de estilos generales: tarjetas y apartado "destacado" */
+.destacados {
+  margin-top: 60px;
+  padding: 0 20px;
+  background-color: goldenrod;
+  padding-bottom: 100px;
+  padding-top: $estandar;
+  &__titulo {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+  }
+  &__contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    .tarjeta {
+      background-color: $rojo;
+      border-radius: 10px;
+      padding: $estandar;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+      &__encabezado {
+        position: relative;
+        &-etiqueta {
+          padding: 8px;
+          position: absolute;
+          right: 0;
+          color: #fff;
+          background-color: rgb(0 0 0 / 82%);
+          border-radius: 0 10px 0 10px;
+          text-transform: uppercase;
+        }
+        &-etiqueta--destacada {
+          font-weight: bold;
+        }
+        &-imagen {
+          width: 100%;
+          border-radius: 10px;
+          margin-bottom: $estandar;
+        }
+      }
+      &__titulo {
+        margin-bottom: $estandar;
+        font-size: $estandar;
+        color: #fff;
+      }
+      &__descripcion {
+        height: 65px;
+        margin-bottom: 40px;
+        color: #ffffff;
+      }
+      &__enlace {
+        background-color: #b7ad1e;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        border-radius: 10px;
+        color: #e2e8f0;
+        padding: 15px 0;
+        font-weight: bold;
+      }
+    }
+  }
+}

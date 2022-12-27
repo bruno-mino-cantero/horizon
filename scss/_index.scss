@@ -1,0 +1,17 @@
+/* Index o inicio  */
+.boton-nosotros {
+  position: fixed;
+  bottom: 80px;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $estandar + 10px;
+  aside {
+    display: block;
+    iframe {
+      width: 560px;
+      height: 315px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+/* Galería */
+.galeria-imagenes {
+  margin-top: $estandar + 10px;
+  margin-bottom: $estandar + 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  img {
+    height: 700px;
+  }
+}

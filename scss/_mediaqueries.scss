@@ -1,0 +1,138 @@
+/* Media Queries */
+/* Desktop First: Trabajo desde escritorio. Media Querie que se usa es Max-Width */
+/* 768px: valor para Tablet */
+@media only screen and (max-width: 768px) {
+  /* Global o estilos generales */
+  nav {
+    justify-content: center;
+  }
+  ul {
+    text-align: center;
+    li {
+      font-size: 1.3rem;
+    }
+  }
+  h1 {
+    font-size: 44px;
+  }
+  h3 {
+    font-size: 37px;
+  }
+  p {
+    margin-right: 70px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 70px;
+  }
+  button {
+    margin-right: 110px;
+  }
+  .tarjeta {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /* Index o inicio */
+  .boton-nosotros {
+    bottom: 5px;
+  }
+  .destacados__contenido {
+    grid-template-columns: 1fr;
+  }
+  .tarjeta__descripcion {
+    height: 90px;
+  }
+  /* Vuelos */
+  .fondo-alternativo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    width: 768px;
+    .vuelos-disponibles-izquierda {
+      flex-direction: column;
+      &-texto {
+        margin-top: 10px;
+        margin-left: 106px;
+      }
+    }
+  }
+  .fondo-original {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    width: 768px;
+    .vuelos-disponibles__titulos-derecha {
+      margin-top: 20px;
+      margin-left: $vuelosmedidaestandar;
+      margin-right: $vuelosmedidaestandar;
+    }
+    .boton-vuelos-derecha {
+      margin-left: 110px;
+    }
+    .vuelos-disponibles-derecha {
+      flex-direction: column;
+      &-texto {
+        margin-bottom: 12px;
+        margin-right: $vuelosmedidaestandar;
+      }
+    }
+  }
+  /* Tours */
+  .destacado__contenido {
+    grid-template-columns: 1fr;
+  }
+  /* Galeria */
+  .carousel-control-prev {
+    justify-content: flex-end;
+  }
+  .carousel-control-next {
+    justify-content: flex-end;
+  }
+  .galeria-imagenes {
+    width: 80%;
+    img {
+      height: 550px;
+    }
+  }
+  /* Contacto */
+  .form-container {
+    padding-bottom: 254px;
+  }
+}
+/* 576px: valor para Mobile */
+@media only screen and (max-width: 576px) {
+  /* Global o estilos generales */
+  ul li {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 22px;
+  }
+  /* Index o inicio */
+  .boton-nosotros {
+    bottom: 84px;
+  }
+  .tarjeta__descripcion {
+    height: 135px;
+  }
+  /* Vuelos */
+  .fondo-alternativo {
+    width: 577px;
+  }
+  .fondo-original {
+    width: 577px;
+  }
+  /* Galeria */
+  .galeria-imagenes img {
+    height: 500px;
+  }
+  /* Contacto */
+  .form-container {
+    padding-bottom: 240px;
+  }
+}
