@@ -9,3 +9,13 @@ $gradienteamarillo: rgba(210, 182, 21, 1) 0%;
 $gradienterojo: rgba(219, 22, 48, 1) 100%;
 $amarillo: #ebcf3b;
 $rojo: #db163d;
+// Extend
+.defaultstyle {
+  font-weight: bold;
+  font-style: italic;
+}
+//Mixin
+@mixin tourTituloStyle($color) {
+  font-size: 40px;
+  color: $color;
+}

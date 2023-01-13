@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.defaultstyle, button, ul li {
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* Universal */
 * {
   padding: 0%;
@@ -113,7 +118,6 @@ ul {
 ul li {
   list-style: none;
   font-size: 1.6rem;
-  font-weight: bold;
   display: inline;
   margin: 0px 8px;
 }
@@ -129,8 +133,6 @@ button {
   background-color: #ba072b;
   color: #dbff0d;
   font-family: "Montserrat", sans-serif;
-  font-style: italic;
-  font-weight: bold;
   font-size: 15px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -281,7 +283,7 @@ button {
   margin-top: 20px;
   margin-left: 75px;
   font-size: 40px;
-  color: #ffffff;
+  color: white;
 }
 .fondo-alternativo .tours-texto-italia {
   color: #ffffff;

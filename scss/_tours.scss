@@ -4,8 +4,7 @@
   .tours-titulo {
     margin-top: $estandar;
     margin-left: $toursmedidaestandar;
-    font-size: 40px;
-    color: red;
+    @include tourTituloStyle(red);
   }
   .tours-texto {
     margin-left: $toursmedidaestandar;
@@ -17,8 +16,7 @@
   .tours-titulo {
     margin-top: $estandar;
     margin-left: $toursmedidaestandar;
-    font-size: 40px;
-    color: #ffffff;
+    @include tourTituloStyle(white);
   }
   .tours-texto-italia {
     color: #ffffff;

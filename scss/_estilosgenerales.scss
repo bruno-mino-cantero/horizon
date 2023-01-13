@@ -75,7 +75,7 @@ ul {
   li {
     list-style: none;
     font-size: 1.6rem;
-    font-weight: bold;
+    @extend .defaultstyle;
     display: inline;
     margin: 0px 8px;
     a {
@@ -91,8 +91,7 @@ button {
   background-color: #ba072b;
   color: #dbff0d;
   font-family: "Montserrat", sans-serif;
-  font-style: italic;
-  font-weight: bold;
+  @extend .defaultstyle;
   font-size: 15px;
   margin-bottom: $estandar;
   margin-top: $estandar;
